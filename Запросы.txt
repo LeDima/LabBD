@@ -1,0 +1,6 @@
+SELECT Thermometer.ThermometerID,
+       Thermometer.ThermometerFullName,
+       TypeItems.TypeItems, 
+       ThermometerName.ThermometerName      
+  FROM Thermometer INNER JOIN TypeItems ON Thermometer.ThermometerID = TypeItems.TypeItemsID 
+                  INNER JOIN ThermometerName ON Thermometer.ThermometerNameID = ThermometerName.ThermometerNameID;
